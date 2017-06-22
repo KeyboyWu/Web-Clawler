@@ -42,7 +42,7 @@ request(url, function (error, response, body) {
               output.push({"town":$(td[0]).text(), "village":$(td[1]).text(), "name":$(td[2]).text()});
             }
           }
-          // In asynchronized request, we must wait until all request is done.
+          // In asynchronous request, we must wait until all request is done.
           wait--;
           if (wait==0) {
             console.log(JSON.stringify(output));
